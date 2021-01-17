@@ -31,7 +31,14 @@ int main( int argc, char * argv[] )
     exit(1);
   }
 
-  myout = stdout; 
+     myout = stdout;
+   
+     /*myout=fopen("result.txt","w");
+     if (myout==NULL)
+     {
+        fprintf(stderr,"outFile Not Found\n");
+        exit(1);
+      }*/ 
   if(!Parse){
     TokenOut(); 
   }else{
@@ -40,5 +47,6 @@ int main( int argc, char * argv[] )
     printTree(syntaxTree);
   }
   fclose(myin);
+  //fclose(myout);
   return 0;
 }

@@ -3,8 +3,10 @@
 #include "util.h"
 
 char tokenString[MAXTOKENLEN+1];
-static int yylex(void);
+//static int yylex(void);
 %}
+
+%option noyywrap
 
 digit       [0-9]
 number      {digit}+

@@ -8,7 +8,7 @@
 
 #ifndef YYPARSER
 
-#include "yacc.tab.h"
+#include "bison.tab.h"
 
 #define ENDFILE 0
 
